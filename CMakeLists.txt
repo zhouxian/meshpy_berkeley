@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(meshpy)
+project(meshpy_berkeley)
 
 FIND_PACKAGE(PythonInterp)
 FIND_PACKAGE(PythonLibs 2.7)
@@ -12,5 +12,5 @@ set( CMAKE_INSTALL_PREFIX ../)
 INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS} ${PYTHON_INCLUDE_DIRS} ${OPENGL_INCLUDE_DIRS} ${GLUT_INCLUDE_DIRS})
 LINK_LIBRARIES(${Boost_LIBRARIES} ${PYTHON_LIBRARIES} boost_numpy ${GLUT_LIBRARY} OSMesa)
 
-ADD_SUBDIRECTORY(meshpy)
+ADD_SUBDIRECTORY(meshpy_berkeley)
 

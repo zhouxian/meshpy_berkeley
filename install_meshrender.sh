@@ -3,6 +3,6 @@ mkdir build
 cd build
 cmake ..
 make
-cp meshpy/meshrender.so ../meshpy
+cp meshpy_berkeley/meshrender.so ../meshpy_berkeley
 cd ..
 rm -rf build

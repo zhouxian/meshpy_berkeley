@@ -9,7 +9,7 @@ import random
 import sys
 
 from autolab_core import Point, RigidTransform
-from meshpy import ObjFile, Mesh3D
+from meshpy_berkeley import ObjFile, Mesh3D
 from visualization import Visualizer3D as vis
 
 if __name__ == '__main__':

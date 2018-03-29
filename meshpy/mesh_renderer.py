@@ -18,7 +18,7 @@ except:
 from autolab_core import Point, RigidTransform
 from autolab_core.utils import sph2cart, cart2sph
 from perception import CameraIntrinsics, BinaryImage, ColorImage, DepthImage, RgbdImage, ObjectRender
-from meshpy import MaterialProperties, LightingProperties, RenderMode
+from meshpy_berkeley import MaterialProperties, LightingProperties, RenderMode
 
 class ViewsphereDiscretizer(object):
     """Set of parameters for automatically rendering a set of images from virtual

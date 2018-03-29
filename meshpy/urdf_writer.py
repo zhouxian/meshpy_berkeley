@@ -267,7 +267,7 @@ class UrdfWriter(object):
         sdf.text = urdf_name
         
         author = et.SubElement(root, 'author')    
-        et.SubElement(author, 'name').text = 'AUTOLAB meshpy'
+        et.SubElement(author, 'name').text = 'AUTOLAB meshpy_berkeley'
         et.SubElement(author, 'email').text = 'jmahler@berkeley.edu'
         
         description = et.SubElement(root, 'description')        
@@ -370,7 +370,7 @@ class UrdfWriter(object):
         sdf.text = urdf_name
         
         author = et.SubElement(root, 'author')    
-        et.SubElement(author, 'name').text = 'AUTOLAB meshpy'
+        et.SubElement(author, 'name').text = 'AUTOLAB meshpy_berkeley'
         et.SubElement(author, 'email').text = 'jmahler@berkeley.edu'
         
         description = et.SubElement(root, 'description')        

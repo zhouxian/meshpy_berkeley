@@ -15,7 +15,7 @@ import skimage.morphology as morph
 from skimage.transform import resize
 
 from autolab_core import RigidTransform
-from meshpy import Mesh3D
+from meshpy_berkeley import Mesh3D
 from perception import BinaryImage
 
 class ImageToMeshConverter:

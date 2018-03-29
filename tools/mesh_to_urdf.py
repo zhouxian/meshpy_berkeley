@@ -14,7 +14,7 @@ import sys
 import xml.etree.cElementTree as et
 
 from autolab_core import YamlConfig
-from meshpy import Mesh3D, ObjFile, UrdfWriter
+from meshpy_berkeley import Mesh3D, ObjFile, UrdfWriter
 
 OBJ_EXT = '.obj'
 

@@ -1,6 +1,6 @@
 from unittest import TestCase
 import numpy as np
-from meshpy import Mesh3D
+from meshpy_berkeley import Mesh3D
 
 class TestMesh(TestCase):
 

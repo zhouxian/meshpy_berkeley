@@ -1,5 +1,5 @@
 """
-Script to convert a directory of 3D models to .OBJ wavefront format for use in meshpy using meshlabserver.
+Script to convert a directory of 3D models to .OBJ wavefront format for use in meshpy_berkeley using meshlabserver.
 Author: Jeff Mahler
 """
 import argparse

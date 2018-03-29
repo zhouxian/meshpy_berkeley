@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>meshpy</name>
+  <name>meshpy_berkeley</name>
   <version>0.1.0</version>
-  <description>The meshpy package</description>
+  <description>The meshpy_berkeley package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->

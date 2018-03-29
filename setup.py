@@ -1,5 +1,5 @@
 """
-Setup of meshpy python codebase
+Setup of meshpy_berkeley python codebase
 Author: Jeff Mahler
 """
 from setuptools import setup
@@ -24,13 +24,13 @@ requirements = [
     'Pillow',
 ]
 
-setup(name='meshpy',
+setup(name='meshpy_berkeley',
     version='0.1.0',
-    description='MeshPy project code',
+    description='meshpy_berkeley project code',
     author='Matt Matl',
     author_email='mmatl@berkeley.edu',
     package_dir = {'': '.'},
-    packages=['meshpy'],
+    packages=['meshpy_berkeley'],
     #ext_modules = [meshrender],
     install_requires=requirements,
     test_suite='test',
