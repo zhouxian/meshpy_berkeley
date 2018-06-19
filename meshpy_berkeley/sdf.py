@@ -217,7 +217,8 @@ class Sdf3D(Sdf):
     min_coords_z = [0, 1, 2, 4]
     max_coords_z = [3, 5, 6, 7]
 
-    def __init__(self, sdf_data, origin, resolution, use_abs=True, T_sdf_world=RigidTransform(from_frame='sdf', to_frame='world')):
+    # def __init__(self, sdf_data, origin, resolution, use_abs=True, T_sdf_world=RigidTransform(from_frame='sdf', to_frame='world')):
+    def __init__(self, sdf_data, origin, resolution, use_abs=False, T_sdf_world=RigidTransform(from_frame='sdf', to_frame='world')):
         self.data_ = sdf_data
         self.origin_ = origin
         self.resolution_ = resolution
@@ -479,7 +480,6 @@ class Sdf3D(Sdf):
         # log warning if out of bounds access
         if self.is_out_of_bounds(coords):
             logging.debug('Out of bounds access. Snapping to SDF dims')
-
         # snap to grid dims
         coords[0] = max(0, min(coords[0], self.dims_[0] - 1))
         coords[1] = max(0, min(coords[1], self.dims_[1] - 1))
@@ -524,6 +524,10 @@ class Sdf3D(Sdf):
         except:
             logging.warning('Tangent plane does not exist. Returning None.')
             return None
+
+        # make sure surface normal is outward            
+        if self[coords+n*0.01] < self[coords]:
+            n = -n
         return n
 
     def surface_points(self, grid_basis=True):
